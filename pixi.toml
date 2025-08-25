@@ -1,0 +1,50 @@
+[workspace]
+channels = [
+    "https://prefix.dev/pixi-build-backends",
+    "https://prefix.dev/conda-forge",
+]
+preview = ["pixi-build"]
+platforms = ["osx-arm64"]
+
+
+[workspace.build-variants]
+python = ["3.10", "3.11", "3.12"]
+
+[dependencies]
+opencv-python = { path = "." }
+
+[tasks]
+test = "python -c 'import cv2; print(cv2.__version__)'"
+
+[package]
+name = "opencv-python"
+version = "4.5.5"
+
+[package.build.source]
+path = "opencv-python"
+
+[package.build.backend]
+name = "pixi-build-python"
+version = "*"
+
+[package.build.config]
+compilers = ["c", "cxx"]
+ignore-pyproject-manifest = true
+
+[package.host-dependencies]
+scikit-build = "*"
+setuptools = ">=42"
+packaging = "*"
+cmake = "*"
+numpy = "*"
+
+[package.target.unix.build-dependencies]
+ninja = "*"
+
+[package.run-dependencies]
+python = "*"
+numpy = ">=1.21,<3"
+eigen = "*"
+glib = "*"
+hdf5 = "*"
+libjpeg-turbo = "*"

@@ -1,0 +1,13 @@
+target
+.idea
+.vscode
+__pycache__
+.pixi
+.build
+.DS_store
+.cache
+pytest-temp
+/vendor
+.env
+artifacts
+*.local.*
