@@ -1383,7 +1383,7 @@ packages:
   timestamp: 1755865253665
 - conda: .
   name: opencv-python
-  version: 4.5.5
+  version: 4.12.0
   build: py312h59da58d_0
   subdir: linux-64
   depends:
@@ -1399,11 +1399,11 @@ packages:
   - libstdcxx >=15
   - python_abi 3.12.* *_cp312
   input:
-    hash: b0c32c25e93198d687c5480dcc235996e1ce284920b112744c5fa357b01641d4
+    hash: 9244d84d4fc9d9894e8dda23d61a2dd9f4a25be8ce892e3c6f7fdfab41cc3769
     globs: []
 - conda: .
   name: opencv-python
-  version: 4.5.5
+  version: 4.12.0
   build: py312h59da58d_0
   subdir: osx-arm64
   depends:
@@ -1417,11 +1417,11 @@ packages:
   - libcxx >=20
   - python_abi 3.12.* *_cp312
   input:
-    hash: b0c32c25e93198d687c5480dcc235996e1ce284920b112744c5fa357b01641d4
+    hash: 9244d84d4fc9d9894e8dda23d61a2dd9f4a25be8ce892e3c6f7fdfab41cc3769
     globs: []
 - conda: .
   name: opencv-python
-  version: 4.5.5
+  version: 4.12.0
   build: py312h59da58d_0
   subdir: win-64
   depends:
@@ -1436,7 +1436,7 @@ packages:
   - vc14_runtime >=14.16.27033
   - python_abi 3.12.* *_cp312
   input:
-    hash: b0c32c25e93198d687c5480dcc235996e1ce284920b112744c5fa357b01641d4
+    hash: 9244d84d4fc9d9894e8dda23d61a2dd9f4a25be8ce892e3c6f7fdfab41cc3769
     globs: []
 - conda: https://prefix.dev/conda-forge/linux-64/openssl-3.5.2-h26f9b46_0.conda
   sha256: c9f54d4e8212f313be7b02eb962d0cb13a8dae015683a403d3accd4add3e520e

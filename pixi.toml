@@ -6,7 +6,6 @@ channels = [
 preview = ["pixi-build"]
 platforms = ["osx-arm64", "linux-64", "win-64"]
 
-
 [workspace.build-variants]
 python = ["3.10", "3.11", "3.12"]
 
@@ -18,7 +17,7 @@ test = "python -c 'import cv2; print(cv2.__version__)'"
 
 [package]
 name = "opencv-python"
-version = "4.5.5"
+version = "4.12.0"
 
 [package.build.source]
 path = "opencv-python"
